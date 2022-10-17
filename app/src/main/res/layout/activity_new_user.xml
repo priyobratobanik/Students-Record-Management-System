@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="5dp"
+    android:background="#e1f5fe"
+    tools:context="com.sohini101.studentsrecords.NewUser">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="enter user name:"
+            android:id="@+id/tv1"
+            android:layout_marginTop="10dp"
+            android:textSize="25sp"
+            android:textColor="#0077c2"
+            android:layout_marginLeft="10dp"
+            />
+
+        <EditText
+            android:id="@+id/etreguser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv1"
+            android:layout_alignBottom="@+id/tv1"
+            android:layout_toEndOf="@+id/tv1"
+            android:layout_toRightOf="@+id/tv1"
+            android:background="@drawable/roundededittext"
+            android:textAlignment="center"
+            android:textColor="#18ffff"
+            android:textSize="20sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="enter password:"
+            android:layout_marginTop="20dp"
+            android:id="@+id/tv2"
+            android:textSize="25sp"
+            android:layout_marginLeft="10dp"
+            android:textColor="#0077c2"
+            android:layout_below="@+id/etreguser"
+            />
+
+        <EditText
+            android:id="@+id/etregpass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv2"
+            android:layout_alignBottom="@+id/tv2"
+            android:layout_alignLeft="@+id/etreguser"
+            android:layout_alignStart="@+id/etreguser"
+            android:background="@drawable/roundededittext"
+            android:inputType="textPassword"
+            android:textAlignment="center"
+            android:textColor="#18ffff"
+            android:textSize="20sp" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etsurepass"
+            android:inputType="textPassword"
+            android:layout_below="@+id/etregpass"
+            android:textColor="#18ffff"
+            android:hint="confirm password"
+            android:textColorHint="#4fc3f7"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/security"
+            android:layout_marginTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/etsurepass"
+            android:text="Select Security Question"
+            android:textColor="#0039cb"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/security"
+            android:id="@+id/rgsecurity">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rbpet"
+                android:checked="false"
+                android:onClick="rbclick"
+                android:textColor="#2962ff"
+                android:text="@string/pet"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rbfood"
+                android:checked="false"
+                android:onClick="rbclick"
+                android:textColor="#2962ff"
+                android:text="@string/favfood" />
+        </RadioGroup>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etanswr"
+            android:hint="Your answer"
+            android:textColor="#228683"
+            android:textAllCaps="false"
+            android:visibility="invisible"
+            android:textColorHint="#64b5f6"
+            android:layout_below="@id/rgsecurity"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:inputType="number"
+            android:textColor="#00acc1"
+            android:layout_marginTop="5dp"
+            android:hint="enter id "
+            android:visibility="invisible"
+            android:textColorHint="#4fc3f7"
+            android:textColorHighlight="#f4ff81"
+            android:id="@+id/et4"
+            android:textAlignment="center"
+            android:layout_below="@+id/etanswr"
+            android:layout_centerInParent="true"/>
+
+        <Button
+            android:id="@+id/breg"
+            android:layout_width="110dp"
+            android:layout_height="51dp"
+            android:layout_below="@+id/et4"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:shadowColor="#030303"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:textColor="#002f6c"
+            android:shadowRadius="5"
+            android:background="@drawable/buttonshapee"
+            android:text="register" />
+
+        <Button
+            android:id="@+id/bview"
+            android:layout_width="110dp"
+            android:layout_height="51dp"
+            android:layout_alignEnd="@+id/tv2"
+            android:layout_alignRight="@+id/tv2"
+            android:layout_below="@+id/breg"
+            android:layout_marginEnd="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="23dp"
+            android:background="@drawable/buttonshape"
+            android:shadowColor="#010203"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:onClick="viewuser"
+            android:text="view all" />
+
+        <Button
+            android:id="@+id/bedit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/bview"
+            android:layout_alignBottom="@+id/bview"
+            android:layout_alignLeft="@+id/bupdate"
+            android:layout_alignStart="@+id/bupdate"
+            android:layout_weight="1"
+            android:textColor="#1565c0"
+            android:background="@drawable/border"
+            android:text="EDIT" />
+
+        <Button
+            android:id="@+id/bupdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/bdelete"
+            android:layout_alignBottom="@+id/bdelete"
+            android:layout_alignLeft="@+id/etreguser"
+            android:layout_alignStart="@+id/etreguser"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_weight="1"
+            android:background="#69f0fc"
+            android:visibility="invisible"
+            android:textColor="#000000"
+            android:text="UPDTE" />
+
+        <Button
+            android:id="@+id/bdelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/bview"
+            android:layout_alignRight="@+id/bview"
+            android:layout_below="@+id/bview"
+            android:layout_marginTop="15dp"
+            android:background="#62ebff"
+            android:textColor="#000000"
+            android:visibility="invisible"
+            android:text="delete" />
+    </RelativeLayout>
+
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#ffecb3"
+    android:layout_height="match_parent"
+    tools:context="com.sohini101.studentsrecords.Registration">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvsignasuser"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="newuser"
+        android:layout_marginTop="40dp"
+        android:layout_centerInParent="true"
+        android:background="#fafa"
+        android:layout_below="@+id/tvsignasuser"
+        android:id="@+id/buserreg"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="student reg"
+        android:layout_centerInParent="true"
+        android:id="@+id/bstudreg"
+        android:layout_marginTop="20dp"
+        android:background="#18ffff"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@+id/buserreg"
+        />
+
+</RelativeLayout>

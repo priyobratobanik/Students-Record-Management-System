@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ccff90">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="capture image"
+        android:drawableLeft="@drawable/camera"
+        android:textColor="#c4001d"
+        android:background="#ffc1e3"
+        android:id="@+id/bCapImg"
+        />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="24dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/profilepic"
+        android:id="@+id/ivImage"
+        />
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bshowstud"
+        android:background="#ffff8d"
+        android:text="view"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bdelstudimg"
+        android:layout_marginTop="10dp"
+        android:background="#fff8e1"
+        android:text="Delete photo"
+        />
+    <FrameLayout
+        android:id="@+id/child_fragment_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

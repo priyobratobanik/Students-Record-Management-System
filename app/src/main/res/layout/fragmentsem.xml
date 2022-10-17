@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="5dp"
+    android:layout_marginStart="5dp"
+    android:layout_marginRight="5dp"
+    android:id="@+id/fragmentsem"
+    android:background="#fffde7"
+    android:layout_marginBottom="5dp">
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:id="@+id/tableLayout1"
+        android:layout_height="fill_parent">
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip" >
+            <TextView
+                android:id="@+id/tvmrstrm"
+                android:text="stream"
+                android:background="#ea80fc"
+                android:textColor="#000"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/etmrstrm"
+                android:background="#fbe9e7"
+                android:textColor="#000"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip">
+            <TextView
+                android:id="@+id/tvmryear"
+                android:text="regYear"
+                android:background="#b9f6ca"
+                android:textColor="#000"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/etmryear"
+                android:background="#ecfffd"
+                android:textColor="#000"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRowroll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip">
+            <TextView
+                android:id="@+id/tvmrroll"
+                android:text="regRoll"
+                android:background="#ea80fc"
+                android:textColor="#000"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/etmrroll"
+                android:background="#ecfffd"
+                android:textColor="#000"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dip">
+            <TextView
+                android:id="@+id/tvmr1styr"
+                android:text="1st year"
+                android:background="#26c6da"
+                android:drawableRight="@drawable/marks"
+                android:textColor="#000"
+                android:layout_span="4"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </TableRow>
+        <View
+            android:layout_height="2dip"
+            android:background="#FF0000" />
+
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dip"
+            >
+
+            <TextView
+                android:id="@+id/tvmr1sm1"
+                android:layout_width="23dp"
+                android:layout_height="wrap_content"
+                android:text="sem1"
+                android:background="#f06292"
+                android:textColor="#000"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/etmr1sm1"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:singleLine="true"
+                android:background="#ffcdd2"
+                android:inputType="numberDecimal"
+                android:textColor="#000"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/tvmr1sm2"
+                android:layout_width="91dp"
+                android:layout_height="wrap_content"
+                android:text="sem2"
+                android:background="#f06292"
+                android:textColor="#000"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/etmr1sm2"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:background="#ffcdd2"
+                android:inputType="numberDecimal"
+                android:imeOptions="actionDone"
+                android:textColor="#000"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dip">
+            <TextView
+                android:id="@+id/tv1ygpa"
+                android:text="YGPA"
+                android:textSize="25sp"
+                android:background="#f4ff81"/>
+            <TextView
+                android:id="@+id/tvres1ygpa"
+                android:text=""
+                android:background="#fff9c4"
+                android:textSize="25sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </TableRow>
+        <View
+            android:layout_height="2dip"
+            android:background="#FF0000" />
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dip">
+            <TextView
+                android:id="@+id/tvmr2styr"
+                android:text="2nd year"
+                android:drawableRight="@drawable/marks"
+                android:background="#26c6da"
+                android:textColor="#000"
+                android:layout_span="4"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </TableRow>
+        <View
+            android:layout_height="2dip"
+            android:background="#FF0000" />
+
+
+        <TableRow
+            android:id="@+id/tableRow7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dip">
+
+
+            <TextView
+                android:id="@+id/tvmr2sm1"
+                android:layout_width="23dp"
+                android:layout_height="wrap_content"
+                android:text="sem1"
+                android:background="#f06292"
+                android:textColor="#000"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/etmr2sm1"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:singleLine="true"
+                android:inputType="numberDecimal"
+                android:background="#ffcdd2"
+                android:textColor="#000"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/tvmr2sm2"
+                android:layout_width="91dp"
+                android:layout_height="wrap_content"
+                android:text="sem2"
+                android:background="#f06292"
+                android:textColor="#000"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/etmr2sm2"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:background="#ffcdd2"
+                android:inputType="numberDecimal"
+                android:imeOptions="actionDone"
+                android:textColor="#000"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dip">
+            <TextView
+                android:id="@+id/button2yr"
+                android:text="YGPA"
+                android:textSize="25sp"
+                android:background="#f4ff81"/>
+            <TextView
+                android:id="@+id/tvres2ygpa"
+                android:text=""
+                android:background="#fff9c4"
+                android:textSize="25sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </TableRow>
+        <View
+            android:layout_height="2dip"
+            android:background="#FF0000" />
+        <TableRow
+            android:id="@+id/tableRow9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dip">
+            <TextView
+                android:id="@+id/tvmr3styr"
+                android:text="3rd year"
+                android:background="#26c6da"
+                android:drawableRight="@drawable/marks"
+                android:textColor="#000"
+                android:layout_span="4"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </TableRow>
+        <View
+            android:layout_height="2dip"
+            android:background="#FF0000" />
+
+
+        <TableRow
+            android:id="@+id/tableRow10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dip"
+            >
+
+            <TextView
+                android:id="@+id/tvmr3sm1"
+                android:layout_width="23dp"
+                android:layout_height="wrap_content"
+                android:text="sem1"
+                android:background="#f06292"
+                android:textColor="#000"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/etmr3sm1"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:singleLine="true"
+                android:inputType="numberDecimal"
+                android:background="#ffcdd2"
+                android:textColor="#000"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/tvmr3sm2"
+                android:layout_width="91dp"
+                android:layout_height="wrap_content"
+                android:text="sem2"
+                android:background="#f06292"
+                android:textColor="#000"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/etmr3sm2"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:background="#ffcdd2"
+                android:inputType="numberDecimal"
+                android:imeOptions="actionDone"
+                android:textColor="#000"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dip">
+            <TextView
+                android:id="@+id/button3yr"
+                android:text="YGPA"
+                android:textSize="25sp"
+                android:background="#f4ff81"/>
+            <TextView
+                android:id="@+id/tvres3ygpa"
+                android:text=""
+                android:background="#fff9c4"
+                android:textSize="25sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </TableRow>
+        <View
+            android:layout_height="2dip"
+            android:background="#FF0000" />
+
+        <TableRow
+            android:id="@+id/tableRow13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dip">
+            <TextView
+                android:id="@+id/tvmr4styr"
+                android:text="4th year"
+                android:background="#26c6da"
+                android:drawableRight="@drawable/marks"
+                android:textColor="#000"
+                android:layout_span="4"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </TableRow>
+        <View
+            android:layout_height="2dip"
+            android:background="#FF0000" />
+
+
+        <TableRow
+            android:id="@+id/tableRow14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dip"
+            >
+
+            <TextView
+                android:id="@+id/tvmr4sm1"
+                android:layout_width="23dp"
+                android:layout_height="wrap_content"
+                android:text="sem1"
+                android:background="#f06292"
+                android:textColor="#000"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/etmr4sm1"
+                android:layout_width="45dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:singleLine="true"
+                android:inputType="numberDecimal"
+                android:background="#ffcdd2"
+                android:textColor="#000"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/tvmr4sm2"
+                android:layout_width="91dp"
+                android:layout_height="wrap_content"
+                android:text="sem2"
+                android:background="#f06292"
+                android:textColor="#000"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/etmr4sm2"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:background="#ffcdd2"
+                android:inputType="numberDecimal"
+                android:imeOptions="actionDone"
+                android:textColor="#000"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dip">
+            <TextView
+                android:id="@+id/button4yr"
+                android:text="YGPA"
+                android:textSize="25sp"
+                android:background="#f4ff81"/>
+            <TextView
+                android:id="@+id/tvres4ygpa"
+                android:text=""
+                android:background="#fff9c4"
+                android:textSize="25sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </TableRow>
+        <View
+            android:layout_height="2dip"
+            android:background="#FF0000" />
+        <TableRow
+            android:id="@+id/tableRowfinal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dip">
+
+
+        <TextView
+            android:id="@+id/tvfinalmarks"
+            android:text="DGPA"
+            android:textSize="25sp"
+            android:background="#64dd17"/>
+        <TextView
+            android:id="@+id/tvfinaldgpa"
+            android:text=""
+            android:background="#ccff90"
+            android:textSize="25sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        </TableRow>
+        <View
+            android:layout_height="2dip"
+            android:background="#FF0000" />
+        <TableRow>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="#c94f7c"
+                android:text="add"
+                android:id="@+id/bsemadd"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:background="#ff80fb"
+                android:text="update"
+                android:id="@+id/bsemupt"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:background="#ffb2dd"
+                android:text="delete"
+                android:id="@+id/bsemdel"/>
+
+        </TableRow>
+        <View
+            android:layout_marginTop="5dp"
+            android:layout_height="2dip"
+            android:background="#FF0000" />
+    </TableLayout>
+
+
+
+</android.support.v4.widget.NestedScrollView>
